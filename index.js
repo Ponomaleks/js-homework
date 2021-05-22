@@ -1,7 +1,25 @@
 console.log('Hello world!');
 // ================================== Задача 1 / 36 ======================================
+function checkAge(age) {
+  if (age >= 18) {
+    // Change this line
+    return 'You are an adult';
+  }
 
+  return 'You are a minor';
+}
 // ================================== Задача 2 / 36 ======================================
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  // Change code below this line
+
+  if (password === ADMIN_PASSWORD) {
+    return 'Welcome!';
+  }
+
+  return 'Access denied, wrong password!';
+  // Change code above this line
+}
 
 // ================================== Задача 3 / 36 ======================================
 
