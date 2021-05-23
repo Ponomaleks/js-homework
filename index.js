@@ -1,333 +1,290 @@
 console.log('Hello world!');
-// ================================== Задача 1 / 36 ======================================
-function checkAge(age) {
-  if (age >= 18) {
-    // Change this line
-    return 'You are an adult';
-  }
+// // ================================== Задача 1 / 32 ======================================
+// function checkAge(age) {
+//   if (age >= 18) {
+//     // Change this line
+//     return 'You are an adult';
+//   }
 
-  return 'You are a minor';
+//   return 'You are a minor';
+// }
+// // ================================== Задача 2 / 32 ======================================
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   // Change code below this line
+
+//   if (password === ADMIN_PASSWORD) {
+//     return 'Welcome!';
+//   }
+
+//   return 'Access denied, wrong password!';
+//
+// }
+
+// ================================== Задача 3 / 32 ======================================
+
+// function checkStorage(available, ordered) {
+//   if (ordered === 0) {
+//     return 'Your order is empty!';
+//   }
+//   if (ordered > available) {
+//     return 'Your order is too large, not enough goods in stock!';
+//   }
+//   return 'The order is accepted, our manager will contact you';
+// }
+// console.log(checkStorage(70, 0));
+
+// // ================================== Задача 4 / 32 ======================================
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+// // ================================== Задача 5 / 32 ======================================
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[fruits.length - 1];
+
+// // ================================== Задача 6 / 32 ======================================
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// fruits[1] = 'peach';
+// fruits[3] = 'banana';
+// // ================================== Задача 7 / 32 ======================================
+
+// const fruits = ['apple', 'peach', 'pear', 'banana'];
+
+// const fruitsArrayLength = fruits.length;
+// ================================== Задача 8 / 32 ======================================
+
+// const fruits = ['apple', 'peach', 'pear', 'banana'];
+
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+// ================================== Задача 9 / 32 ======================================
+
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   console.log(array[0]);
+//   console.log(array[array.length - 1]);
+//   return [array[0], array[array.length - 1]];
+// }
+// getExtremeElements(['Earth', 'Mars', 'Venus']);
+// // ================================== Задача 10 / 32 ======================================
+
+// function splitMessage(message, delimeter) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(delimeter);
+
+//   return words;
+// }
+
+// // ================================== Задача 11 / 32 ======================================
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+//   return message.split(' ').length * pricePerWord;
+// }
+// // ================================== Задача 12 / 32 ======================================
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   // Change code below this line
+
+//   string = array.join(delimeter);
+
+//   return string;
+// }
+// ================================== Задача 13 / 32 ======================================
+// function slugify(title) {
+//   return (slug = title.toLowerCase().split(' ').join('-'));
+
+//   // Change code above this line
+// }
+// console.log(slugify('Ten secrets of JavaScript'));
+
+// // ================================== Задача 14 / 32 ======================================
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(-3);
+// // ================================== Задача 15 / 32 ======================================
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients); // Change this line
+// // ================================== Задача 16 / 32 ======================================
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//   let newArray = firstArray.concat(secondArray);
+
+//   if (newArray.length <= maxLength) {
+//     return newArray;
+//   }
+
+//   return newArray.slice(0, maxLength);
+
+//   // Change code above this line
+// }
+// console.log(makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 2));
+
+// // // ================================== Задача 17 / 32 ======================================
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) {
+//   // Change this line
+//   console.log(i);
+// }
+
+// // ================================== Задача 18 / 32 ======================================
+
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let sum = 0;
+//   for (let i = 1; i <= number; i += 1) {
+//     sum = sum + i;
+//   }
+//   return sum;
+//   // Change code above this line
+// }
+// console.log(calculateTotal(10));
+// // // ================================== Задача 19 / 32 ======================================
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) {
+//   // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// // // ================================== Задача 20 / 32 ======================================
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (i = 0; i <= order.length - 1; i += 1) {
+//     total = total + order[i];
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+// // ================================== Задача 21 / 32 ======================================
+// function findLongestWord(string) {
+//   // Change code below this line
+
+//   const arrow = string.split(' ');
+//   let wordlength = 0;
+//   let word;
+//   for (i = 0; i <= arrow.length - 1; i += 1) {
+//     if (arrow[i].length > wordlength) {
+//       wordlength = arrow[i].length;
+//       word = arrow[i];
+//     }
+//   }
+//   console.log(word);
+//   return word;
+
+//   // Change code above this line
+// }
+// findLongestWord('Google do a roll');
+// // // ================================== Задача 22 / 32 ======================================
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   console.log(numbers);
+//   return numbers;
+// }
+// createArrayOfNumbers(14, 17);
+
+// // ================================== Задача 23 / 32 ======================================
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       newArray.push(numbers[i]);
+//     }
+//   }
+//   return newArray;
+
+//   // Change code above this line
+// }
+
+// filterArray([12, 24, 8, 41, 76], 38);
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// // // ================================== Задача 24 / 32 ======================================
+
+// function checkFruit(fruit) {
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// // ================================== Задача 25 / 32 ======================================
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  const commonElements = [];
+  for (let i = 0; i < array1.length; i += 1) {
+    if (array2.includes(array1[i])) {
+      commonElements.push(array1[i]);
+    }
+  }
+  return commonElements;
+  // Change code above this line
 }
-// ================================== Задача 2 / 36 ======================================
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// // ================================== Задача 26 / 32 ======================================
+function calculateTotalPrice(order) {
+  let total = 0;
   // Change code below this line
 
-  if (password === ADMIN_PASSWORD) {
-    return 'Welcome!';
+  for (const item of order) {
+    total += item;
   }
 
-  return 'Access denied, wrong password!';
+  // Change code above this line
+  return total;
+}
+
+// // ================================== Задача 27 / 32 ======================================
+function filterArray(numbers, value) {
+  // Change code below this line
+  const filteredNumbers = [];
+
+  for (const item of numbers) {
+    const number = item;
+
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  }
+
+  return filteredNumbers;
   // Change code above this line
 }
 
-// ================================== Задача 3 / 36 ======================================
-
-// ================================== Задача 4 / 36 ======================================
-
-// ================================== Задача 5 / 36 ======================================
-
-// ================================== Задача 6 / 36 ======================================
-
-// ================================== Задача 7 / 36 ======================================
-
-// ================================== Задача 8 / 36 ======================================
-
-// ================================== Задача 9 / 36 ======================================
-
-// ================================== Задача 10 / 36 ======================================
-
-// ================================== Задача 11 / 36 ======================================
-
-// ================================== Задача 12 / 36 ======================================
-
-// ================================== Задача 13 / 36 ======================================
-
-// ================================== Задача 14 / 36 ======================================
-
-// ================================== Задача 15 / 36 ======================================
-function checkAge(age) {
-  let message;
-
-  if (age >= 18) {
-    // Change this line
-    message = 'You are an adult';
-  } else {
-    message = 'You are a minor';
-  }
-
-  return message;
-}
-
-// ================================== Задача 16 / 36 ======================================
-function checkStorage(available, ordered) {
-  let message;
-  // Change code below this line
-  if (available >= ordered) {
-    message = 'Order is processed, our manager will contact you.';
-  } else {
-    message = 'Not enough goods in stock!';
-  }
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 17 / 36 ======================================
-let a = 5;
-let b = 10;
-let c = 15;
-let d = 20;
-
+// // ================================== Задача 28 / 32 ======================================
 // Change code below this line
-a += 2;
-b -= 4;
-c *= 3;
-d /= 10;
+const a = 3 % 3;
+const b = 4 % 3;
+const c = 11 % 8;
+const d = 12 % 7;
+const e = 8 % 6;
+// // ================================== Задача 29 / 32 ======================================
 
-// ================================== Задача 18 / 36 ======================================
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-  let message;
-  // Change code below this line
-  let totalPrice = pricePerDroid * orderedQuantity;
+// // ================================== Задача 30 / 32 ======================================
 
-  if (totalPrice > customerCredits) {
-    message = 'Insufficient funds!';
-  } else {
-    message = `You ordered ${orderedQuantity} droids, you have ${
-      customerCredits - totalPrice
-    } credits left`;
-  }
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 19 / 36 ======================================
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
-  let message;
-
-  if (password === null) {
-    // Change this line
-    message = 'Canceled by user!';
-  } else if (password === ADMIN_PASSWORD) {
-    // Change this line
-    message = 'Welcome!';
-  } else {
-    message = 'Access denied, wrong password!';
-  }
-
-  return message;
-}
-// ================================== Задача 20 / 36 ======================================
-function checkStorage(available, ordered) {
-  let message;
-  // Change code below this line
-  if (ordered === 0) {
-    message = 'There are no products in the order!';
-  } else if (ordered > available) {
-    message = 'Your order is too large, there are not enough items in stock!';
-  } else {
-    message = 'The order is accepted, our manager will contact you';
-  }
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 21 / 36 ======================================
-function isNumberInRange(start, end, number) {
-  const isInRange = number >= start && number <= end; // Change this line
-
-  return isInRange;
-}
-// ================================== Задача 22 / 36 ======================================
-function checkIfCanAccessContent(subType) {
-  const canAccessContent = subType === 'pro' || subType === 'vip'; // Change this line
-
-  return canAccessContent;
-}
-// ================================== Задача 23 / 36 ======================================
-function isNumberNotInRange(start, end, number) {
-  const isInRange = number >= start && number <= end;
-  const isNotInRange = !isInRange; // Change this line
-
-  return isNotInRange;
-}
-// ================================== Задача 24 / 36 ======================================
-function getDiscount(totalSpent) {
-  const BASE_DISCOUNT = 0;
-  const BRONZE_DISCOUNT = 0.02;
-  const SILVER_DISCOUNT = 0.05;
-  const GOLD_DISCOUNT = 0.1;
-  let discount;
-  // Change code below this line
-  if (totalSpent >= 5000 && totalSpent < 20000) {
-    discount = BRONZE_DISCOUNT;
-  } else if (totalSpent >= 20000 && totalSpent < 50000) {
-    discount = SILVER_DISCOUNT;
-  } else if (totalSpent >= 50000) {
-    discount = GOLD_DISCOUNT;
-  } else discount = BASE_DISCOUNT;
-  // Change code above this line
-  return discount;
-}
-// ================================== Задача 25 / 36 ======================================
-function checkStorage(available, ordered) {
-  let message;
-  // Change code below this line
-
-  message =
-    ordered > available
-      ? 'Not enough goods in stock!'
-      : 'The order is accepted, our manager will contact you';
-
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 26 / 36 ======================================
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
-  let message;
-  // Change code below this line
-  message =
-    password === ADMIN_PASSWORD
-      ? 'Access is allowed'
-      : 'Access denied, wrong password!';
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 27 / 36 ======================================
-function getSubscriptionPrice(type) {
-  let price;
-  // Change code below this line
-
-  switch (
-    type // Change this line
-  ) {
-    case 'starter': // Change this line
-      price = 0; // Change this line
-      break;
-
-    case 'professional': // Change this line
-      price = 20; // Change this line
-      break;
-
-    case 'organization': // Change this line
-      price = 50; // Change this line
-      break;
-  }
-
-  // Change code above this line
-  return price;
-}
-// ================================== Задача 28 / 36 ======================================
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
-  let message;
-  // Change code below this line
-
-  switch (password) {
-    case null:
-      message = 'Canceled by user!';
-      break;
-
-    case ADMIN_PASSWORD:
-      message = 'Welcome!';
-      break;
-
-    default:
-      message = 'Access denied, wrong password!';
-  }
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 29 / 36 ======================================
-function getShippingCost(country) {
-  let message;
-  // Change code below this line
-
-  switch (country) {
-    case 'China':
-      message = `Shipping to ${country} will cost 100 credits`;
-      break;
-
-    case 'Chile':
-      message = `Shipping to ${country} will cost 250 credits`;
-      break;
-
-    case 'Australia':
-      message = `Shipping to ${country} will cost 170 credits`;
-      break;
-
-    case 'Jamaica':
-      message = `Shipping to ${country} will cost 120 credits`;
-      break;
-
-    default:
-      message = 'Sorry, there is no delivery to your country';
-  }
-  // Change code above this line
-  return message;
-}
-
-// ================================== Задача 30 / 36 ======================================
-function getNameLength(name) {
-  const message = `Name ${name} is ${name.length} characters long`; // Change this line
-
-  return message;
-}
-
-// ================================== Задача 31 / 36 ======================================
-const courseTopic = 'JavaScript essentials';
-// Change code below this line
-
-const courseTopicLength = courseTopic.length;
-const firstElement = courseTopic[0];
-const lastElement = courseTopic[courseTopic.length - 1];
-
-// Change code above this line
-
-// ================================== Задача 32 / 36 ======================================
-function getSubstring(string, length) {
-  const substring = string.slice(0, length); // Change this line
-
-  return substring;
-}
-// ================================== Задача 33 / 36 ======================================
-function formatMessage(message, maxLength) {
-  let result;
-  // Change code below this line
-  if (message.length <= maxLength) {
-    result = message;
-  } else {
-    result = `${message.slice(0, maxLength)}...`;
-  }
-  /// Change code above this line
-  return result;
-}
-
-// ================================== Задача 34 / 36 ======================================
-function normalizeInput(input) {
-  const normalizedInput = input.toLowerCase(); // Change this line
-
-  return normalizedInput;
-}
-
-// ================================== Задача 35 / 36 ======================================
-function checkForName(fullName, name) {
-  const result = fullName.includes(name); // Change this line
-  return result;
-}
-
-// ================================== Задача 36 / 36 ======================================
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  result =
-    message.toLowerCase().includes('spam') ||
-    message.toLowerCase().includes('sale');
-  // Change code above this line
-  return result;
-}
+// // ================================== Задача 32 / 32 ======================================
