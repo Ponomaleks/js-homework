@@ -284,7 +284,55 @@ const c = 11 % 8;
 const d = 12 % 7;
 const e = 8 % 6;
 // // ================================== Задача 29 / 32 ======================================
+function getEvenNumbers(start, end) {
+  // Change code below this line
+
+  const evenNumbers = [];
+  for (i = start; i <= end; i += 1) {
+    if (i % 2 === 0) {
+      evenNumbers.push(i);
+    }
+  }
+  return evenNumbers;
+
+  // Change code above this line
+}
 
 // // ================================== Задача 30 / 32 ======================================
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
+}
+
+// // ================================== Задача 31 / 32 ======================================
+function findNumber(start, end, divisor) {
+  // Change code below this line
+
+  for (let i = start; i < end; i += 1) {
+    if (i % divisor === 0) {
+      return i;
+    }
+  }
+
+  // Change code above this line
+}
 
 // // ================================== Задача 32 / 32 ======================================
+function includes(array, value) {
+  // Change code below this line
+  let answer;
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] === value) {
+      return (answer = true);
+      break;
+    } else answer = false;
+  }
+  return answer;
+  // Change code above this line
+}
