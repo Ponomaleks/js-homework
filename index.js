@@ -500,50 +500,142 @@ console.log('Hello world!');
 // // ================================== Задача 33 ======================================
 
 // Change code below this line
-function findMatches(array, ...rest) {
-  const matches = []; // Don't change this line
+// function findMatches(array, ...rest) {
+//   const matches = []; // Don't change this line
 
-  for (arg of rest) {
-    if (array.includes(arg)) {
-      matches.push(arg);
-    }
-  }
-  // Change code above this line
-  return matches;
-}
-// ================================== Задача 34 ======================================
+//   for (arg of rest) {
+//     if (array.includes(arg)) {
+//       matches.push(arg);
+//     }
+//   }
+//   // Change code above this line
+//   return matches;
+// }
+// // ================================== Задача 34 ======================================
 
-const bookShelf = {
+// const bookShelf = {
+//   // Change code below this line
+//   books: ['The last kingdom', 'The guardian of dreams'],
+//   getBooks() {
+//     return 'Returning all books';
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+
+//   // Change code above this line
+// };
+
+// // ================================== Задача 35 ======================================
+// const bookShelf = {
+//   books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+
+//     this.books[this.books.indexOf(oldName)] = newName;
+//     // or
+//     // this.books.splice([this.books.indexOf(oldName)], 1, newName);
+
+//     // Change code above this line
+//   },
+// };
+
+// // ================================== Задача 36 ======================================
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: [],
+//   // Change code above this line
+// };
+
+// // ================================== Задача 37 ======================================
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   getPotions() {
+//     return this.potions;
+//   },
+
+//   // Change code above this line
+// };
+
+// // ================================== Задача 38 ======================================
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+
+//     // Change code above this line
+//   },
+// };
+
+// ================================== Задача 39 ======================================
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     this.potions.splice(this.potions.indexOf(potionName), 1);
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.removePotion('Speed potion');
+// console.log(atTheOldToad);
+// // ================================== Задача 40 ======================================
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//     this.potions[this.potions.indexOf(oldName)] = newName;
+//     // Change code above this line
+//   },
+// };
+
+// ================================== Задача 41 ======================================
+const atTheOldToad = {
+  potions: [
+    { name: 'Speed potion', price: 460 },
+    { name: 'Dragon breath', price: 780 },
+    { name: 'Stone skin', price: 520 },
+  ],
   // Change code below this line
-  books: ['The last kingdom', 'The guardian of dreams'],
-  getBooks() {
-    return 'Returning all books';
+  getPotions() {
+    return this.potions;
   },
-  addBook(bookName) {
-    return `Adding book ${bookName}`;
+  addPotion(potionName) {
+    if (this.potions.includes(potionName)) {
+      return `Potion ${potionName} is already equipped!`;
+    }
+    this.potions.push(potionName);
   },
-  removeBook(bookName) {
-    return `Deleting book ${bookName}`;
-  },
-  updateBook(oldName, newName) {
-    return `Updating book ${oldName} to ${newName}`;
-  },
+  removePotion(potionName) {
+    for (let i = 0; i < this.potions.length; i += 1) {
+      if (this.potions[i].name === potionName) {
+        this.potions.splice(i, 1);
+        return;
+      }
+    }
 
+    return `Potion ${potionName} is not in inventory!`;
+  },
+  updatePotionName(oldName, newName) {
+    for (let i = 0; i < this.potions.length; i += 1) {
+      if (this.potions[i].name === oldName) {
+        this.potions[i].name = newName;
+      }
+    }
+    return `Potion ${oldName} is not in inventory!`;
+  },
   // Change code above this line
 };
 
-// ================================== Задача 35 ======================================
-
-// ================================== Задача 36 ======================================
-
-// ================================== Задача 37 ======================================
-
-// ================================== Задача 38 ======================================
-
-// ================================== Задача 39 ======================================
-
-// ================================== Задача 40 ======================================
-
-// ================================== Задача 41 ======================================
-
 // ================================== Задача 42 ======================================
+console.log(atTheOldToad.removePotion('Dragon breath'));
+
+console.log(atTheOldToad);
