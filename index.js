@@ -258,26 +258,26 @@ console.log('Hello world!');
 // }
 
 // ================================== Задача 18 ======================================
-// const products = [
-//   { name: 'Radar', price: 1300, quantity: 4 },
-//   { name: 'Scanner', price: 2700, quantity: 3 },
-//   { name: 'Droid', price: 400, quantity: 7 },
-//   { name: 'Grip', price: 1200, quantity: 9 },
-// ];
+const products = [
+  { name: 'Radar', price: 1300, quantity: 4 },
+  { name: 'Scanner', price: 2700, quantity: 3 },
+  { name: 'Droid', price: 400, quantity: 7 },
+  { name: 'Grip', price: 1200, quantity: 9 },
+];
 
-// function getProductPrice(productName) {
-//   // Change code below this line
-//   let price = null;
-//   for (product of products) {
-//     if (product.name === productName) {
-//       price = product.price;
-//     }
-//   }
-//   return price;
+function getProductPrice(productName) {
+  // Change code below this line
 
-//   // Change code above this line
-// }
+  for (const product of products) {
+    if (product.name === productName) {
+      return product.price;
+    }
+  }
+  return null;
 
+  // Change code above this line
+}
+console.log(getProductPrice('Scanner'));
 // ================================== Задача 19 ======================================
 // const products = [
 //   { name: 'Radar', price: 1300, quantity: 4 },
@@ -598,44 +598,44 @@ console.log('Hello world!');
 // };
 
 // ================================== Задача 41 ======================================
-const atTheOldToad = {
-  potions: [
-    { name: 'Speed potion', price: 460 },
-    { name: 'Dragon breath', price: 780 },
-    { name: 'Stone skin', price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(potionName) {
-    if (this.potions.includes(potionName)) {
-      return `Potion ${potionName} is already equipped!`;
-    }
-    this.potions.push(potionName);
-  },
-  removePotion(potionName) {
-    for (let i = 0; i < this.potions.length; i += 1) {
-      if (this.potions[i].name === potionName) {
-        this.potions.splice(i, 1);
-        return;
-      }
-    }
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     if (this.potions.includes(potionName)) {
+//       return `Potion ${potionName} is already equipped!`;
+//     }
+//     this.potions.push(potionName);
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === potionName) {
+//         this.potions.splice(i, 1);
+//         return;
+//       }
+//     }
 
-    return `Potion ${potionName} is not in inventory!`;
-  },
-  updatePotionName(oldName, newName) {
-    for (let i = 0; i < this.potions.length; i += 1) {
-      if (this.potions[i].name === oldName) {
-        this.potions[i].name = newName;
-      }
-    }
-    return `Potion ${oldName} is not in inventory!`;
-  },
-  // Change code above this line
-};
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === oldName) {
+//         this.potions[i].name = newName;
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+//   // Change code above this line
+// };
 
-// ================================== Задача 42 ======================================
-console.log(atTheOldToad.removePotion('Dragon breath'));
+// // ================================== Задача 42 ======================================
+// console.log(atTheOldToad.removePotion('Dragon breath'));
 
-console.log(atTheOldToad);
+// console.log(atTheOldToad);
